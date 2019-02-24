@@ -8,6 +8,21 @@ namespace PadawansTask2
         {
             int sum = 0;
 
+            if(count <= 0)
+            {
+                throw new ArgumentOutOfRangeException("The Count Of Elements Of The Sequence Cannot Be Less Or Equals Zero.");
+            }
+            
+            if(number == int.MaxValue)
+            {
+                throw new ArgumentOutOfRangeException("The Obtained Result Out Of Range Of Integer Values"); 
+            }
+
+            if(number == int.MinValue)
+            {
+                throw new ArgumentOutOfRangeException("The Obtained Result Out Of Range Of Integer Values."); 
+            }
+
             int sumNumbers = number * count;
 
             int sumRemainder = 0; 
